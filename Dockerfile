@@ -1,4 +1,4 @@
-FROM jenkins
+FROM jenkins:1.651.2
 MAINTAINER Alpha Hinex <AlphaHinex@gmail.com>
 
 USER root
