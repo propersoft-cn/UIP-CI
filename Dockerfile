@@ -3,6 +3,10 @@ MAINTAINER Alpha Hinex <AlphaHinex@gmail.com>
 
 USER root
 
+# Set time zone
+RUN echo "Asia/Shanghai" > /etc/timezone
+RUN dpkg-reconfigure -f noninteractive tzdata
+
 # Install svn and maven
 RUN apt-get update && apt-get install -y subversion maven
 RUN apt-get clean
