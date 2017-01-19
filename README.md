@@ -3,7 +3,7 @@ CI for UIP
 
 ### In docker daemon
 
-    $ docker run --name uip-ci -p 9102:8080 -p 50005:50000 -d propersoft/uip-ci
+    $ docker run --name uip-ci -p 8080:8080 -p 50000:50000 -v /opt/jenkins/m2:/root/.m2 -v /opt/jenkins/workspace:/var/jenkins_home/workspace -d propersoft/uip-ci
     $ docker exec -ti uip-ci bash
 
 ### In docker container

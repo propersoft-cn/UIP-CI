@@ -8,7 +8,7 @@ RUN echo "Asia/Shanghai" > /etc/timezone
 RUN dpkg-reconfigure -f noninteractive tzdata
 
 # Install svn and maven
-RUN apt-get update && apt-get install -y subversion maven
+RUN apt-get update --fix-missing && apt-get install -y subversion maven
 RUN apt-get clean
 
 # Custom maven's settings
