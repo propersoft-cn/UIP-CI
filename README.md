@@ -3,14 +3,16 @@ CI for UIP
 
 ### In docker daemon
 
+    # Start uip-ci container
     $ docker run --name uip-ci -p 8080:8080 -p 50000:50000 -v /opt/jenkins/m2:/root/.m2 -v /opt/jenkins/jobs:/var/jenkins_home/jobs -d propersoft/uip-ci
+    # Into container
     $ docker exec -ti uip-ci bash
 
 ### In docker container
 
     # svn info https://{nexus_url}/svn/CodeManagement-all/trunk
 
-Input `p` as `permanently` save server certificate
+Press `p` as `permanently` save server certificate, input and store svn username & password
 
 ### In Jenkins
 
