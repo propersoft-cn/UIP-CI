@@ -23,3 +23,7 @@ Press `p` as `permanently` save server certificate, input and store svn username
 
 - Set git repository (https://gitlab.com/propersoft/pack-uip.git) and gitlab credentials
 - Setup build steps and others
+
+### Work Path
+
+`/var/jenkins_home`
